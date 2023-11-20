@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     const listaUsuarios = document.getElementById('listaUsuarios');
 
-    // Obtiene datos simulados de usuarios desde JSONPlaceholder
+    
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => {
-            // Agrega una edad aleatoria y una imagen a cada usuario
+        
             const usuariosConEdadEImagen = users.map(usuario => ({
                 ...usuario,
-                edad: Math.floor(Math.random() * 40) + 16, // Edad aleatoria entre 18 y 67 años
-                imagen: `assets/img/${usuario.id}.jpeg` // Ruta de la imagen basada en el ID del usuario
+                edad: Math.floor(Math.random() * 40) + 16, 
+                imagen: `assets/img/${usuario.id}.jpeg` 
             }));
 
-            // Muestra los detalles de los usuarios en la lista HTML
+            
             usuariosConEdadEImagen.forEach(usuario => {
                 const li = document.createElement('li');
                 li.classList.add('usuario');

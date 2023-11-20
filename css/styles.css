@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color:rgb(247, 233, 233);
+  background-color:rgb(231, 230, 222);
 
 
   
@@ -14,11 +14,10 @@ body {
 
 h1 {
   text-align: center;
-  color:rgb(94, 71, 4);
-  font-family: Helvetica;
-  font-size: 60px;
+  color:rgb(0, 0, 0);
+  font-size: 50px;
   padding-top: 10px;
-  
+  font-style: Lucida;
   
   
   
@@ -60,8 +59,7 @@ h1 {
   margin-bottom: 40px;
   margin-left: -20px;
 
- 
-  
+   
 }
 
 
